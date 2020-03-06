@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Estilos.css"/>
+<meta charset="ISO-8859-1">
+<link rel="icon" href="imagenes/icono.png">
+<title>Analizar Algoritmos</title>
+</head>
+<body>
+	<h1>Analizar Algoritmos</h1>
+	<div class="cuadros">
+		<button id="boton1" class="boton1" onClick="cambiarcolor('boton1')">&#920;</button>
+		<button id="boton2" class="boton2" onClick="cambiarcolor('boton2')">&#937;</button>
+		<button id="boton3" class="boton3" onClick="cambiarcolor('boton3')">O</button>
+	</div>
+	<br><br><br>
+	<label for="gx" class="label0">g(x)</label>
+	<input type="text" name="gx" placeholder="Ingresa g(x)" id="gx">
+	<br><br>
+	<label for="fx" class="label1">f(x)</label>
+	<input type="text" name="fx" placeholder="Ingresa f(x)" id="fx">
+	<br><br>
+	<label for="c1" class="label2">C1</label>
+	<input type="text" name="c1" placeholder="Ingresa la constante 1" id="c1">
+	<br><br>
+	<label for="c2" class="label3">C2</label>
+	<input type="text" name="c2" placeholder="Ingresa la constante 2" id="c2">
+	<br><br>
+	<label for="n0" class="label3">n0</label>
+	<input type="text" name="c2" placeholder="Ingresa la n0 de tu funcion" id="n0">
+	<br><br><br><br>
+	<p class="res" id="res"></p>
+	<button class="boton" id="boton" onClick="calcular(gx.value,fx.value,c1.value,c2.value,n0.value)"><span>Evaluar </span></button>
+	<h3></h3>
+	<img src="imagenes/uachlogo.png" alt="uach logo" width="200" class="uach">
+	<script type="text/javascript" src="package\dist\math.min.js"></script>
+	<script type="text/javascript" src="Analizar.js"></script>
+</body>
+</html>
